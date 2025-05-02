@@ -62,8 +62,27 @@ public class main {
         //same as minus
         int d = 10;
         System.out.println("int d = 10;");
+        int f = d --;
+        System.out.println("int f = d --; f = " + f + ", d = " + d);
+        d -=1;
+        System.out.println( "d -=1; d = " + d);
+        int e = -- d;
+        System.out.println("int e = -- d; e = " + e + ", d = " + d);
 
-        System.out.println();
+        System.out.println('\n');
+
+
+        // Order of Operations: [P - E - M - D - A - S]
+        // Parentheses, Exponents, Multiplication, Division, Addition, Subtraction
+
+        //equn
+        double result = 3 + 4 * (7 - 5) / 2.0;
+        //parenthesis = (7-5) = 2 ->  result =   3 + 4 * 2/ 2.0;
+        //Multiplication = 4 * 2 = 8 -> result = 3 + 8/2.0
+        //Division = 3 + 4.0
+        //Addition = 7, thats the result
+        System.out.println("result = " + result);
+
 
 
 
