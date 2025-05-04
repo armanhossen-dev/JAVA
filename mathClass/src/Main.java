@@ -1,4 +1,5 @@
 import java.sql.PreparedStatement;
+import java.util.Arrays;
 import  java.util.Scanner;
 
 public class Main {
@@ -33,20 +34,41 @@ public class Main {
 
         System.out.println();
 
-        //practice phitagoras theorem
+        //Practice the Pythagorean Theorem.
+        //HYPOTENUSE c = Math.sqrt(a²+b²);
+
         System.out.println("Right angled triangle");
         System.out.println("c = sqrt(a²+b²)");
-        //HYPOTENUSE c = Math.sqrt(a²+b²);
+
         double a, b, c;
         Scanner scan = new Scanner(System.in);
-        System.out.print("a = "); a = scan.nextDouble();
-        System.out.print("b = "); b = scan.nextDouble();
-        c = Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
-        System.out.println("So, c = " + c);
-        /*
-        a = 4
-        b = 3
-        So, c = 5.0
-        */
+
+        System.out.print("Enter the length of the side a = "); a = scan.nextDouble();
+        System.out.print("Enter the length of the side b = "); b = scan.nextDouble();
+
+        c = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+
+        //System.out.println("So, c = " + c + "cm"); // some times gives more than needed digits after dot
+        System.out.printf("The hypotenuse (side c) is : %.2fcm", c);
+        System.out.println('\n');
+
+
+        System.out.println("Calculating a circumference, area, volume by Enter the radius!");
+        double r, circumference, area, volume;
+        System.out.print("radius = ");
+        r = scan.nextDouble();
+
+        circumference = 2 * Math.PI * r;
+        area = Math.PI * Math.pow(r,2);
+        volume = (4.0/3.0) * Math.PI * Math.pow(r,3);
+        System.out.printf("Circumference = %.2f cm\nArea = %.2f cm²\nVolume = %.2f cm³\n", circumference, area, volume);
+
+        //numlock + alt + 0178 -> ² for win
+        //numlock + alt + 0179 -> ³ for win
+        //(mac)² -> Control + command + space
+
+
+
+        scan.close();
     }
 }
