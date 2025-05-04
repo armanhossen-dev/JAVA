@@ -78,13 +78,25 @@ public class Main{
         */
 
         System.out.println();
-        //if i want to zero paded by 4 digit in left side then
+        //if i want to zero padding by 4 digit in left side , using %04d
         System.out.printf("%04d\n",id1); //0001
         System.out.printf("%04d\n",id2); //0023
         System.out.printf("%04d\n",id3); //0456
         System.out.printf("%04d\n",id4); //7890
 
-        scan.close();
+        System.out.println();
+        //for having 4 spae or 4 digti value but not zero, using %4d
+        System.out.printf("%4d\n",id1); //   1
+        System.out.printf("%4d\n",id2); //  23
+        System.out.printf("%4d\n",id3); // 456
+        System.out.printf("%4d\n",id4); //7890
 
+        System.out.println();
+        //using negative numbers = left justified padding
+        System.out.printf("%-4d\n",id1); //1
+        System.out.printf("%-4d\n",id2); //23
+        System.out.printf("%-4d\n",id3); //456
+        System.out.printf("%-4d\n",id4); //7890
+        scan.close();
     }
 }
