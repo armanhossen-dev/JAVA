@@ -53,18 +53,18 @@ public class Main {
 
 
         System.out.println();
-        //replace char in a stirng
+        ///replace char in a stirng
         String str1 = "Hello World";
         System.out.print("str1 = \"Hello World\" => ");
         str1 = str1.replace("l", "*");
         System.out.println(str1);
 
 
-        //to check if a string is empty or not
+        ///to check if a string is empty or not
         //str1.isEmpty() this will return boolean value
         System.out.println("str1.isEmpty() = " + str1.isEmpty());
 
-        //to find if any string contains a specific char ,then return  a boolean value, not for word
+        ///to find if any string contains a specific char ,then return  a boolean value, not for word
         if(name.contains(" ")){
             System.out.println( "name.contains(\" \") = " + name.contains(" "));
         }
