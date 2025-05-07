@@ -16,6 +16,7 @@ public class Main {
 
         System.out.print("Enter the second number = ");
         num2 = scan.nextDouble();
+        //https://youtu.be/xTtL8E4LzTQ?t=10798
 
         scan.close();
     }
