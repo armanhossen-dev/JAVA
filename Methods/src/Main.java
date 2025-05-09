@@ -15,9 +15,14 @@ public class Main {
         int age = 22;
         info(name, age);
 
+        double result = sqare(3);
+        //System.out.println(sqare(3)); this works ✅
+        System.out.println(result);
+
+        System.out.println("cube of 3 = " + cube(3));
+
     }
     // to create a method in java, go outside the main() method, we create a new method, since we useing static method as main, so the outsider method should be also static
-
     static void happyBirthday(){
         System.out.println("Happy Birthday To You!");
         System.out.println("Happy Birthday dear you!");
@@ -30,7 +35,19 @@ public class Main {
         System.out.println("You are " + a + " years old\n");
     }
 
-    //https://youtu.be/xTtL8E4LzTQ?t=15183
+    //https://youtu.be/xTtL8E4LzTQ?t=15400
+    static double sqare(double number){
+        return number*number;
+    }
+
+    static double cube(double num){
+        return num*num*num;
+    }
+
+    static String getFullName(String f, String l){
+        return f + " " + l;
+    }
+
 
 
 
