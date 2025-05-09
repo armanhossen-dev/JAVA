@@ -1,6 +1,9 @@
 import org.w3c.dom.ls.LSOutput;
 
 public class Main {
+    /*
+    write psvm then enter = it will generate this > public static void main(String[] args) {}     */
+
     public static void main(String[] args){
         // method = a block of reusable code that is executed when called ()
         // like function in c
@@ -20,6 +23,9 @@ public class Main {
         System.out.println(result);
 
         System.out.println("cube of 3 = " + cube(3));
+
+        String fullname =  getFullName("Arman", "Hossen");
+        System.out.println(fullname);
 
     }
     // to create a method in java, go outside the main() method, we create a new method, since we useing static method as main, so the outsider method should be also static
@@ -44,11 +50,8 @@ public class Main {
         return num*num*num;
     }
 
-    static String getFullName(String f, String l){
-        return f + " " + l;
+    static String getFullName(String first, String last){
+        return first + " " + last;
     }
-
-
-
 
 }
