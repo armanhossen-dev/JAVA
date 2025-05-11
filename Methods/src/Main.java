@@ -30,7 +30,7 @@ public class Main {
 
         if(ageCheck(23)){
             System.out.println("You are eligible");
-        }eles{
+        }else{
             System.out.println("Your are not eligible");
         }
 
