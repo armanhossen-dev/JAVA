@@ -49,9 +49,10 @@ public class Main {
     static double cube(double num){
         return num*num*num;
     }
-
     static String getFullName(String first, String last){
         return first + " " + last;
     }
+
+    
 
 }
