@@ -27,6 +27,13 @@ public class Main {
         String fullname =  getFullName("Arman", "Hossen");
         System.out.println(fullname);
 
+
+        if(ageCheck(23)){
+            System.out.println("You are eligible");
+        }eles{
+            System.out.println("Your are not eligible");
+        }
+
     }
     // to create a method in java, go outside the main() method, we create a new method, since we useing static method as main, so the outsider method should be also static
     static void happyBirthday(){
@@ -53,6 +60,15 @@ public class Main {
         return first + " " + last;
     }
 
-    
+    static boolean ageCheck(int age){
+        /*
+        if(age >= 18){
+            return true;
+        }else{
+            return false;
+        }
+         */
+        return (age>=18) ? true : false;
+    }
 
 }
