@@ -14,6 +14,10 @@ public class Main {
         // char         object
         // boolean
 
+        //Non-Primitive Data Types --are--> objects
+        String greeting = "HELLO";
+        int[] nums = {1,2,3,4,5};
+
         //2 steps to creating a variable
         //--------------------------------
         // 1.declaration
