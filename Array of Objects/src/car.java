@@ -20,6 +20,11 @@ public class car {
         System.out.println(String.format("He is driving %s %s %s on the road.", article, color, modelName));
 
     }
+    void drive(String name){
+        String article = "aeiou".indexOf(Character.toLowerCase(color.charAt(0))) >= 0? "an" : "a";
+        System.out.printf(name + " will drive %s %s %s\n", article, color, modelName);
+    }
+
 
 
 }
