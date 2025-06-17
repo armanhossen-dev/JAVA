@@ -11,7 +11,6 @@ public class Main {
     //  Animal animal = new Animal(); // this line gives an error
     //we can create // Animal animal = new Cat(); // or
                                   // = new Dog();
-
         Scanner sc = new Scanner(System.in);
         Animal animal;
         System.out.print("Would you like  a dog or a cat? (1 = dog, 2 = cat): ");
