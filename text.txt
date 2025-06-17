@@ -1,2 +1,136 @@
-47:27/12:00:00
-https://youtu.be/xTtL8E4LzTQ?si=7AG7KgHZ2WV01NiU&t=2847
+// Problem 1: Grading System (if else-if else)
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter marks: ");
+        int mark = sc.nextInt();
+        if(mark >= 90){
+            System.out.println("Grade: A");
+        }else if(mark >= 80){
+            System.out.println("Grade: B");
+        }else if(mark >= 70){
+            System.out.println("Grade: C");
+        }else if(mark >= 60){
+            System.out.println("Grade: D");
+        }else{
+            System.out.println("Grade: F");
+        }
+        sc.close();
+    }
+}
+
+----------------------------------------------------
+
+// Problem 2: Odd or Even (if-else)
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        if(num % 2 == 0){
+            System.out.println(num + " is Even");
+        }else{
+            System.out.println(num + " is Odd");
+        }
+        sc.close();
+    }
+}
+
+----------------------------------------------------
+
+// Problem 3: Sum of First N Natural Numbers (for loop)
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter N: ");
+        int n = sc.nextInt();
+        int sum = 0;
+        for(int i = 1; i<=n; i++){
+            sum += i;
+        }
+        System.out.print("Sum = "+ sum +" (");
+        for(int i = 1; i<=n; i++){
+            System.out.print(i);
+            if(i<n){
+                System.out.print("+");
+            }
+        }
+        System.out.println(")");
+
+        sc.close();
+    }
+}
+
+----------------------------------------------------
+
+// Problem 4: Multiplication Table (for loop)
+import java.util.Scanner;
+public class Main {
+        public static void main(String[] args){
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Enter N: ");
+            int n = sc.nextInt();
+            for(int i = 1; i <= 10; i++){
+                System.out.println(n  + " x " + i + " = " + i*n);
+            }
+            sc.close();
+        }
+}
+
+----------------------------------------------------
+
+// Problem 5: Find First Divisible by 7 (for loop + break)
+public class Main {
+    public static void main(String[] args){
+        int target = 7;
+        boolean notfound = true;
+        int i = 2;
+        while(notfound){
+            if(target % i == 0){
+                System.out.println("First number divisible by 7 is: " + i);
+                notfound =  false;
+            }
+            i++;
+        }
+    }
+}
+
+----------------------------------------------------
+
+//Problem 6: Print Odd Numbers (for loop + continue)
+public class Main {
+    public static void main(String[] args){
+                for(int i = 1; i<= 20; i++){
+            if(i%2 == 0){
+                continue;
+            }
+            System.out.print(i + " ");
+        }
+    }
+}
+
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
+----------------------------------------------------
