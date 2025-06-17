@@ -15,12 +15,23 @@ public class Main {
 
         // to change those attribute lets create method with the return type of those attributes datatype - getter
         // now i can access those attributes read it - getter method!
-        
+
         System.out.println(c1.getName());
         System.out.println(c1.getModel());
-        System.out.println(c1.getPrice());
         System.out.println(c1.getColor());
+        System.out.println(c1.getPrice());
 
+        System.out.println();
 
+//now to change any private attribute we use setter methods, think we can not change name or model,
+//        we can change or update the price, and color
+        c1.setColor("Blue");
+        c1.setPrice(200000);
+//        c1.setPrice(-200000); // color will be changed but not the price
+//        c1.displayCarInfo();
+        System.out.println(c1.getName());
+        System.out.println(c1.getModel());
+        System.out.println(c1.getColor());
+        System.out.println(c1.getPrice());
     }
 }
