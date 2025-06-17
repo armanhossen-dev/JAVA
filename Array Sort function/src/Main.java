@@ -9,10 +9,10 @@ public class Main {
         Arrays.sort(nums);
         System.out.println(Arrays.toString(nums));
         //[1, 4, 7, 41, 67]
-
         System.out.println("Small number: " +nums[0]);
         System.out.println("Big number: " + nums[nums.length-1]);
         System.out.println();
+
 
         /// for an array of strings
         String[] names = {"Arman", "Hossen", "Ali", "Khan", "Ripon", "Alice", "John"};
@@ -22,6 +22,7 @@ public class Main {
 
         ///Sort in Descending Order (using Comparator with boxed types)
         /// have to import Collections
+        
         Integer[] numbers = {20,100,30,00, 49,99,102};
         // Use Integer[] instead of int[] for reverse sorting,
         // because Collections.reverseOrder() only works with objects, not primitives.
