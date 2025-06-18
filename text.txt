@@ -183,11 +183,257 @@ public class Main {
 }
 
 ----------------------------------------------------
+
+//Problem 10: Check Prime Number (for loop + if-else)
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int c = 0;
+        for(int i = 1; i<= num; i++){
+            if(num % i == 0){
+                c++;
+            }
+        }
+        if(c == 2){
+            System.out.println(num + " is a Prime Number");
+        }else{
+            System.out.println(num + " is not a Prime Number");
+        }
+        sc.close();
+    }
+}
+
 ----------------------------------------------------
+
+// Problem 12: Pyramid Pattern (for loop)
+public class Main {
+    public static void main(String[] args){
+        int n = 5;
+        for(int a = 1; a<= n; a++){
+            for(int b = 1; b<= n-a; b++){
+                System.out.print(" ");
+            }
+            for(int c = 1; c <= a; c++){
+                System.out.print("#");
+                if(c >= 1){
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+/*
+    #
+   # #
+  # # #
+ # # # #
+# # # # #
+*/
+
 ----------------------------------------------------
+
+// Problem 13: Fibonacci Series (for loop)
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        int a = 0;
+        int b = 1;
+
+        int next = 0;
+        if(n == 1){
+            System.out.println("0");
+        }
+        if(n == 2){
+            System.out.println("0, 1");
+        }
+        if(n >= 3){
+            System.out.print("0, 1, ");
+            for(int i = 3; i<=n; i++){
+                next = a + b;
+                System.out.print(next);
+                if(i<n){
+                    System.out.print(", ");
+                }
+                a = b;
+                b = next;
+            }
+            System.out.println();
+        }
+        sc.close();
+    }
+}
+
+/*
+10
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+*/
+
 ----------------------------------------------------
+
+//Problem 14: Factorial Using Recursion
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter N: ");
+        int n = sc.nextInt();
+        int op = facto(n);
+        System.out.println("Factorial of " + n +" = " + op );
+        sc.close();
+    }
+    public static int facto(int n){
+        if(n == 1 || n == 0){
+            return 1;
+        }
+        return n * facto(n - 1);
+    }
+}
+
+//Enter N: 5
+//Factorial of 5 = 120
+
 ----------------------------------------------------
+
+Problem 15:Design java class on
+● Book
+● Bank
+● Hospital
+● Library
+
+public class Main {
+    public static void main(String[] args){
+        Book book1 = new Book("ABC English Book", "Arman", "xyz", 120);
+        System.out.println("book1");
+        book1.displayBookInfo();
+        System.out.println();
+
+        Bank bank1 = new Bank("Arman's Bank",2025,"DIU","Arman Hossen",1,"$10M");
+        System.out.println("bank1");
+        bank1.displayBankInfo();
+        System.out.println();
+
+        Hospital hospital1 = new Hospital("Mayer Dua Hospital", 2025, "Dottopara", "Arman Hossen", 1, 1);
+        System.out.println("hospital1");
+        hospital1.displayHospitalInfo();
+        System.out.println();
+
+        Library library1 = new Library("Baper Dua Library", 2025, "Rahat villa", "Arman Hossen", 302);
+        System.out.println("library1");
+        library1.displayLibraryInfo();
+        System.out.println();
+    }
+}
+
+public class Book {
+    String BookName;
+    String Writer;
+    String Publisher;
+    double Price;
+
+    Book(String BookName, String Writer, String Publisher, double Price){
+        this.BookName = BookName;
+        this.Writer = Writer;
+        this.Publisher = Publisher;
+        this.Price = Price;
+    }
+
+    void displayBookInfo(){
+        System.out.println("BookName: " + BookName);
+        System.out.println("Writer: " + Writer);
+        System.out.println("Publisher: " + Publisher);
+        System.out.println("Price: " + Price);
+    }
+}
+
+public class Bank {
+    String name;
+    String address;
+    String Owner;
+    int userNumber;
+    String reserved;
+    int year;
+
+    Bank(String name, int year, String address, String Owner, int userNumber, String reserved){
+        this.name = name;
+        this.year = year;
+        this.address = address;
+        this.Owner = Owner;
+        this.userNumber = userNumber;
+        this.reserved = reserved;
+    }
+    void displayBankInfo(){
+        System.out.println("name = " +  name);
+        System.out.println("year = " +  year);
+        System.out.println("address = " +  address);
+        System.out.println("Owner = " +  Owner);
+        System.out.println("userNumber = " +  userNumber);
+        System.out.println("reserved = " +  reserved);
+    }
+}
+        
+        
+public class Hospital {
+        String name;
+        String address;
+        String Owner;
+        int PatientNumber;
+        int DoctorNumber;
+        int year;
+
+    Hospital(String name, int year, String address, String Owner, int PatientNumber, int DoctorNumber){
+            this.name = name;
+            this.year = year;
+            this.address = address;
+            this.Owner = Owner;
+            this.PatientNumber = PatientNumber;
+            this.DoctorNumber = DoctorNumber;
+        }
+        void displayHospitalInfo(){
+            System.out.println("name = " +  name);
+            System.out.println("year = " +  year);
+            System.out.println("address = " +  address);
+            System.out.println("Owner = " +  Owner);
+            System.out.println("PatientNumber = " +  PatientNumber);
+            System.out.println("DoctorNumber = " +  DoctorNumber);
+        }
+
+}
+
+
+public class Library {
+        String name;
+        String address;
+        String Owner;
+        int TotalBook;
+        int year;
+
+    Library(String name, int year, String address, String Owner, int TotalBook){
+            this.name = name;
+            this.year = year;
+            this.address = address;
+            this.Owner = Owner;
+            this.TotalBook = TotalBook;
+        }
+        void displayLibraryInfo() {
+            System.out.println("name = " + name);
+            System.out.println("year = " + year);
+            System.out.println("address = " + address);
+            System.out.println("Owner = " + Owner);
+            System.out.println("TotalBook = " + TotalBook);
+        }
+}
+
 ----------------------------------------------------
+
+
 ----------------------------------------------------
 ----------------------------------------------------
 ----------------------------------------------------
