@@ -30,7 +30,7 @@ The repository is organized as follows:
 ## 🛠️ Tools Used
 
 - **Compiler/Runtime**: OpenJDK / Oracle JDK
-- **IDE**: IntelliJ IDEA / Eclipse / Visual Studio Code
+- **IDE**: IntelliJ IDEA / Visual Studio Code [Eclipse In Future😁]
 
 ---
 
