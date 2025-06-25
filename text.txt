@@ -433,11 +433,133 @@ public class Library {
 
 ----------------------------------------------------
 
+import java.util.ArrayList;
+public class Main {
+    public static void main(String[] args){
+        //Problem 16: Add and Display Elements in an ArrayList
+        ArrayList<Integer> nums = new ArrayList<Integer>(); // datatype "Integer", not int,
+        nums.add(10);
+        nums.add(15);
+        nums.add(20);
+        nums.add(25);
+        nums.add(30);
+//      for(int i = 0; i<nums.size(); i++){
+//               System.out.println(nums.get(i));
+//      }
+        System.out.println(nums);
+    }
+}
+
 
 ----------------------------------------------------
+
+import java.util.ArrayList;
+public class Main {
+    public static void main(String[] args){
+        //Problem 17: Remove Even Numbers from an ArrayList
+        ArrayList<Integer> nums = new ArrayList<Integer>(); // datatype "Integer", not int,
+        nums.add(10);
+        nums.add(15);
+        nums.add(20);
+        nums.add(25);
+        nums.add(30);
+      for(int i = 0; i<nums.size(); i++){
+          if(nums.get(i) % 2 == 0) {
+            nums.remove(i);
+          }
+          //System.out.println(nums.get(i));
+      }
+      System.out.println(nums);
+    }
+}
+
+
 ----------------------------------------------------
+
+//Problem 18: Check if an Element Exists in an ArrayList
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> nums = new ArrayList<Integer>(); // datatype "Integer", not int,
+//        nums.add(3);
+//        nums.add(8);
+//        nums.add(12);
+//        nums.add(15);
+//        nums.add(21);
+        for(int i = 1; i<=5; i++){
+            int n = sc.nextInt();
+            nums.add(n);
+        }
+        int d = 0;
+        System.out.print("Search: ");
+        int target = sc.nextInt();
+        for(int i = 0; i<nums.size(); i++){
+            if(nums.contains(target)) {
+                d++;
+            }
+            //System.out.println(nums.get(i));
+        }
+        if(d!=0){
+            System.out.println(target + " exists in the list.");
+        }else {
+            System.out.println(target + " doesn't exists in the list.");
+        }
+        sc.close();
+    }
+}
+
+
 ----------------------------------------------------
+
+//Problem 19: Sort an ArrayList
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = 5;
+        int num;
+        ArrayList<Integer> ns = new ArrayList<Integer>(n);
+        for(int i = 0; i<n; i++){
+            num = sc.nextInt();
+            ns.add(num);
+        }
+        Collections.sort(ns); //in ascending order
+        System.out.println(ns);
+//        42 12 89 33 5
+//        [5, 12, 33, 42, 89]
+    }
+}
+
 ----------------------------------------------------
+
+//Problem 20: Reverse an ArrayList
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = 5;
+        int num;
+        ArrayList<Integer> ns = new ArrayList<Integer>(n);
+        for(int i = 0; i<n; i++){
+            num = sc.nextInt();
+            ns.add(num);
+        }
+        //Collections.sort(ns, Collections.reverseOrder()); // descending order
+        Collections.reverse(ns); //in Reverse order
+        System.out.println(ns);
+//        42 12 89 33 5
+//        [5, 33, 89, 12, 42]
+    }
+}
+
+
 ----------------------------------------------------
 ----------------------------------------------------
 ----------------------------------------------------
