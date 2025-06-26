@@ -713,3 +713,24 @@ public class Main {
 ----------------------------------------------------
 Practice 
 OOP Varsity Tasks
+
+HW1
+01. You are asked to develop the "University Course Enrollment System". 
+Thus, you need toperform the OOP analysis in theses ways:
+01. Find the number of classes
+02. Find the attributes and methods
+03. Find the relationship among classes .
+Specifically identify One-to-One associations,One-to-Many associations, Many-to-Many associations.
+04. Draw the UML diagram highlighting relevant features, methods, and relationships.
+05. Write actual Java code that reflects the UML model, using proper class structure,constructors, 
+methods, and relationship implementation (e.g., object references,ArrayLists for associations).
+
+2.You are asked to develop the "Hospital management System". 
+Thus, you need to perform theOOP analysis in theses ways:
+01. Find the number of classes
+02. Find the attributes and methods
+03. Find the relationship among classes. 
+Specifically identify One-to-One associations,One-to-Many associations, Many-to-Many associations.
+04. Draw the UML diagram highlighting relevant features, methods, and relationships.
+05. Write actual Java code that reflects the UML model, using proper class structure,constructors, methods,
+and relationship implementation (e.g., object references,ArrayLists for associations).
