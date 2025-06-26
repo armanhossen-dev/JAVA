@@ -432,11 +432,11 @@ public class Library {
 }
 
 ----------------------------------------------------
-
+//Problem 16: Add and Display Elements in an ArrayList
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args){
-        //Problem 16: Add and Display Elements in an ArrayList
+        
         ArrayList<Integer> nums = new ArrayList<Integer>(); // datatype "Integer", not int,
         nums.add(10);
         nums.add(15);
@@ -713,6 +713,7 @@ public class Main {
 ----------------------------------------------------
 Practice 
 OOP Varsity Tasks
+<<<<<<< HEAD
 
 HW1
 01. You are asked to develop the "University Course Enrollment System". 
@@ -734,3 +735,5 @@ Specifically identify One-to-One associations,One-to-Many associations, Many-to-
 04. Draw the UML diagram highlighting relevant features, methods, and relationships.
 05. Write actual Java code that reflects the UML model, using proper class structure,constructors, methods,
 and relationship implementation (e.g., object references,ArrayLists for associations).
+=======
+>>>>>>> 50626cb5b403d6cb6019aee5757494f7300d6819
