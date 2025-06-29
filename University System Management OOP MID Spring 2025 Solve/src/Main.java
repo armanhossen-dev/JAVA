@@ -20,14 +20,16 @@ public class Main {
         c2.addCourseid(222);
 
         Professor p2 = new Professor();
-        p2.addName("Ripon Ali");
-        p2.addId(404);
+        p2.addName("Ripon Ali Khan");
+        p2.addId(241);
         p2.addCourse(c2);
         u1.addProfessor_USM(p2);
 
         u1.displayUS(); // Only call once
     }
 }
+
+
 
 
 //        +---------------------+

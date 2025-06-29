@@ -34,7 +34,7 @@ public class UniversitySystem {
         System.out.println("Departments Count: " + d_array.size());
         System.out.println("Professors Count: " + p_array.size());
 
-        System.out.println("\n--- Departments ---");
+        System.out.println("\n----- Departments -----");
         int i = 1;
         for(Department d1 : d_array){
             System.out.print(i++ + ". ");
