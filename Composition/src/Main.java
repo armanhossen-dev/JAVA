@@ -8,8 +8,6 @@ public class Main {
 
         Car c1 = new Car("BMW","CLS","Red", 2025, "V8");
         c1.displayCarInfo();
-
+        c1.start();
     }
 }
-
-// 8.42.34   https://youtu.be/xTtL8E4LzTQ?t=31398

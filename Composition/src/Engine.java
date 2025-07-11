@@ -6,4 +6,8 @@ public class Engine {
     String getEngineType(){
         return type;
     }
+    void start(){
+        System.out.print("You start the " + type + " engine!\n");
+    }
+
 }

@@ -13,8 +13,14 @@ public class Car {
         engineObject = new Engine(engineType);
     }
 
+    void start(){
+        this.engineObject.start();
+        System.out.println("The " + Color + " " + Name + " is running now!");
+    }
+
     void displayCarInfo(){
         System.out.println("Car Info:");
         System.out.println(Color + " "+ Name + " " + Model +" " + Year + " " + engineObject.getEngineType());
     }
+
 }
