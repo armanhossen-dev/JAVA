@@ -9,13 +9,11 @@ public class Main {
             write the java class implementing these methods!
          */
         BankUser Arman = new BankUser(51000.0,"usd","First Salary","ACN1");
-//        BankUser Hossen = new BankUser(100.0,"usd","Last Salary","ACN2");
+        // BankUser Hossen = new BankUser(100.0,"usd","Last Salary","ACN2");
 
         Arman.deposit(3000);
         Arman.deposit(40000, "bdt");
         Arman.deposit(5050, "eur"); //Euro
         Arman.deposit(200, "ACN3","Adding for future 😎");
-
-//        Hossen.deposit(5000,"usd");
     }
 }

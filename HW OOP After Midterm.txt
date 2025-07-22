@@ -1,0 +1,117 @@
+deposit overloading problem
+---------------------------------------------------------------------------------------------------
+public class Main {
+    public static void main(String[] args){
+        /*
+            A bank allows users to deposit money in different ways.
+            Implement a method deposit with method overloading;
+                - deposit(int amount): deposit the specified amount into the account.
+                - deposit(double amount, String currency): deposits money after converting it to the default currency (assume USD conversion).
+                - deposit(int amount, String accountNumber, String note); Deposits money with a transaction note.
+            write the java class implementing these methods!
+         */
+        BankUser Arman = new BankUser(51000.0,"usd","First Salary","ACN1");
+        // BankUser Hossen = new BankUser(100.0,"usd","Last Salary","ACN2");
+
+        Arman.deposit(3000);
+        Arman.deposit(40000, "bdt");
+        Arman.deposit(5050, "eur"); //Euro
+        Arman.deposit(200, "ACN3","Adding for future 😎");
+    }
+}
+
+public class BankUser{
+    double amount;
+    String currency;
+    String note;
+    String accountNumber;
+
+
+    BankUser(double amount, String currency, String note, String acNum){
+        this.amount = amount;
+        this.currency = currency;
+        this.note = note;
+        accountNumber = acNum;
+    }
+
+    void deposit(int amount1){
+        amount += amount1;
+        System.out.println("Money Added, Now Balance : $" + amount);
+        //  System.out.printf("Money Added, Now Balance : $%,.2f\n", amount);
+    }
+
+    void deposit(double amount1, String currency){
+        if(currency == "bdt"){ // 1.0 US Dollar equal 121.75 Bangladeshi Taka
+            amount += (amount1/121.75);
+            System.out.println("Money Added after converting to USD, Now Balance : $" + amount);
+            // System.out.printf("Now Balance : $%,.2f\n", amount);
+        }
+        if(currency == "usd"){
+            amount += amount1;
+            System.out.println("Money Added, Now Balance : $" + amount);
+        
+        }
+        if(currency == "eur"){
+            amount += (amount1/0.85);
+            System.out.println("Money Added, Now Balance : $" + amount);
+        }
+    }
+    void deposit(int amount1, String accountNumber1, String newNote){
+        note += " " + newNote;
+        amount += amount1;
+        accountNumber = accountNumber1;
+        System.out.println("Now Balance : $" + amount + ", Note: " + note);
+    }
+}
+---------------------------------------------------------------------------------------------------
+
+applyDiscount method overloading
+---------------------------------------------------------------------------------------------------
+public class Main {
+    public static void main(String[] args){
+        /*
+        * a company is developing an online shopping system where users can apply discounts to their purchases.
+        * implement a method applyDiscount that is overloaded in the following ways.
+        * - if the user provides a percentage (e.g., applyDiscount(double percentage)), reduce the price by that percentage.
+        * - if the user provides a fixed amount (e.g., applyDicount(int amount)), reduce the price by that amount.
+        * - if no arguments are provided, apply a default discount of 5%.
+        * - write the java class implementing these overloaded methods.
+        */ // ei line gula lek ba na
+
+        ShopItems dress1 = new ShopItems(1000.0);
+        ShopItems dress2 = new ShopItems(1500.0);
+        ShopItems dress3 = new ShopItems(2000.0);
+        dress1.applyDiscount();
+        dress2.applyDiscount(100);
+        dress3.applyDiscount(50.0);
+        /*
+        Applying the Discount by 5%, Now the price have to pay is : 950.0
+        Applying the Discount by Amount : 100, Now the price have to pay is : 1400.0
+        Applying the Discount by 50.0%, Now the price have to pay is : 1000.0
+        */
+    }
+}
+
+public class ShopItems {
+    double price;
+    ShopItems(double p){
+        price = p;
+    }
+    // Method overloading: same method name with different parameters, performing different tasks
+    void applyDiscount(double percentage){
+        price = price - (price*(percentage/100.0));
+        System.out.println("Applying the Discount by " + percentage + "%, Now the price have to pay is : " + price);
+    }
+    void applyDiscount(int amount){
+        price -= amount;
+        System.out.println("Applying the Discount by Amount : " + amount + ", Now the price have to pay is : " + price);
+    }
+    void applyDiscount(){
+         price -= price*(5.0/100);
+        System.out.println("Applying the Discount by 5%, Now the price have to pay is : " + price);
+    }
+}
+
+---------------------------------------------------------------------------------------------------
+
+
