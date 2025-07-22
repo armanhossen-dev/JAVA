@@ -1,5 +1,3 @@
-import java.net.spi.URLStreamHandlerProvider;
-
 public class Main {
     public static void main(String[] args){
         /*
@@ -9,7 +7,7 @@ public class Main {
         * - if the user provides a fixed amount (e.g., applyDicount(int amount)), reduce the price by that amount.
         * - if no arguments are provided, apply a default discount of 5%.
         * - write the java class implementing these overloaded methods.
-        */
+        */ // ei line gula lek ba na
 
         ShopItems dress1 = new ShopItems(1000.0);
         ShopItems dress2 = new ShopItems(1500.0);
