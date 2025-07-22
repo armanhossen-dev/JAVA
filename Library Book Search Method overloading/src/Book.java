@@ -1,15 +1,24 @@
-public class Book extends  Library {
+class Book {
     String title;
     String author;
+    String genre;
     int year;
-    String gener;
     int page;
 
-    /*
-    - searchBook(String title): Search by book title.
-    - searchBook(String title, String author): Search by book title and author.
-    - searchBook(int publicationYear): Search books published in a particular year.
-    - searchBook(String genre, int minPages): Search books by genre with a minimum page count.
-    */
+    public Book(String title, String author, String genre, int year, int page) {
+        this.title = title;
+        this.author = author;
+        this.genre = genre;
+        this.year = year;
+        this.page = page;
+    }
 
+    public void display() {
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Genre: " + genre);
+        System.out.println("Publication Year: " + year);
+        System.out.println("Pages: " + page);
+        System.out.println("----------------------------------------");
+    }
 }
