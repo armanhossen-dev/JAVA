@@ -248,8 +248,66 @@ public class Register{
         System.out.println(name + ", " + age + ", " + course + ", " + email);
     }
 }
+
 ---------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------
+ hospital employs various staff members
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args){
+        ArrayList<Employee> es = new ArrayList<>();
+
+        Doctor d1 = new Doctor("Arnab korim", "D101", 33000,"Blood","Skin");
+        Surgeon s1 = new Surgeon("Rumi Rahman", "D202", 50330, "", "Bone",4, 20);
+        es.add(d1);
+        es.add(s1);
+
+        d1.work();
+        s1.work();
+    }
+}
+
+public class Employee {
+    String name, employeeID;
+    double salary;
+    Employee(String name, String employeeID, double salary){
+        this.name = name;
+        this.employeeID = employeeID;
+        this.salary = salary;
+    }
+}
+
+public class Doctor extends Employee{
+    String specialization;
+    String department;
+    Doctor(String name, String employeeID, double salary, String specialization, String department){
+        super(name, employeeID, salary);
+        this.specialization = specialization;
+        this.department = department;
+    }
+
+    void work(){
+        System.out.println("Doctor diagnoses patients.");
+    }
+}
+
+
+public class Surgeon extends Doctor{
+    int YOE; //yearOfExperience
+    int NOSP; // numberOfSurgeriesPerformed
+    Surgeon(String name, String employeeID, double salary, String specialization, String department,int y, int sp) {
+        super(name, employeeID, salary, specialization, department);
+        this.YOE = y;
+        this.NOSP = sp;
+    }
+    @Override
+    void work(){
+        System.out.println("Surgeon performs operations.");
+    }
+}
+
+--------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
