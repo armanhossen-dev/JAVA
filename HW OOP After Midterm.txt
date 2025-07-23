@@ -123,7 +123,7 @@ class Book {
     int year;
     int page;
 
-    public Book(String title, String author, String genre, int year, int page) {
+    Book(String title, String author, String genre, int year, int page) {
         this.title = title;
         this.author = author;
         this.genre = genre;
@@ -268,7 +268,7 @@ public class Main {
     }
 }
 
-public class Employee {
+class Employee {
     String name, employeeID;
     double salary;
     Employee(String name, String employeeID, double salary){
@@ -278,7 +278,7 @@ public class Employee {
     }
 }
 
-public class Doctor extends Employee{
+class Doctor extends Employee{
     String specialization;
     String department;
     Doctor(String name, String employeeID, double salary, String specialization, String department){
@@ -293,7 +293,7 @@ public class Doctor extends Employee{
 }
 
 
-public class Surgeon extends Doctor{
+class Surgeon extends Doctor{
     int YOE; //yearOfExperience
     int NOSP; // numberOfSurgeriesPerformed
     Surgeon(String name, String employeeID, double salary, String specialization, String department,int y, int sp) {
