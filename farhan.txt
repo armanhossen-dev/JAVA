@@ -1,0 +1,67 @@
+Problem Statement (Using Abstract Class)
+You are developing a University Management System where different types of people are associated with the university 
+— such as students, faculty members, and staff. All of these entities share common attributes but also have their own
+ specific properties.
+______________________________________
+🏛️ Requirements:
+🔹 Common Attributes (Abstract Superclass: Person)
+Each person in the university has:
+•	name (String)
+•	age (int)
+•	id (String)
+You must create an abstract class Person that contains:
+•	These common attributes
+•	An abstract method displayInfo() that must be implemented by all subclasses
+______________________________________
+🔸 Specific Attributes for Subclasses:
+•	Student
+    o	studentID (String)
+    o	courseEnrolled (String)
+    o	grade (double)
+•	Faculty
+    o	facultyID (String)
+    o	designation (String)
+    o	department (String)
+•	Staff
+    o	staffID (String)
+    o	role (String)
+    o	shift (String)
+Each subclass should:
+•	Extend the Person abstract class
+•	Implement the displayInfo() method to show its details
+______________________________________
+🧠 Behavior (Methods):
+•	Each subclass must override the displayInfo() method to display all the information, both inherited and unique.
+______________________________________
+✅ Solution Using Java Inheritance and Abstract Class:
+You must:
+1.	Create an abstract class Person with common attributes and an abstract displayInfo() method.
+2.	Create three subclasses: Student, Faculty, and Staff, each with their specific attributes.
+3.	Implement displayInfo() in each subclass to show complete details.
+______________________________________
+🖥️ Expected Program Output:
+plaintext
+CopyEdit
+----- Student Details -----
+Name: Alice
+Age: 20
+ID: P1001
+Student ID: S2001
+Course Enrolled: Computer Science
+Grade: 3.8
+
+----- Faculty Details -----
+Name: Dr. Smith
+Age: 45
+ID: P2001
+Faculty ID: F3001
+Designation: Professor
+Department: CSE
+
+----- Staff Details -----
+Name: John
+Age: 35
+ID: P3001
+Staff ID: ST4001
+Role: Lab Assistant
+Shift: Morning
