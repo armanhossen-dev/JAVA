@@ -1,6 +1,4 @@
-# Java Programming Repository
-
-Welcome to my Java programming repository! 🎉  
+# My Java programming repository! 🎉  
 
 This repository contains all my Java coding projects, exercises, and practice problems. It serves as a collection of my learning journey and development in Java programming.
 
@@ -30,7 +28,7 @@ The repository is organized as follows:
 ## 🛠️ Tools Used
 
 - **Compiler/Runtime**: OpenJDK / Oracle JDK
-- **IDE**: IntelliJ IDEA / Visual Studio Code [Eclipse In Future😁]
+- **IDE**: IntelliJ IDEA / Visual Studio Code / Eclipse
 
 ---
 
